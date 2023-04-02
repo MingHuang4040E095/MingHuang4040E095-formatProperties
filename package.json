@@ -1,0 +1,38 @@
+{
+    "name": "@syuminghuang/formatProperties",
+    "version": "1.0.0",
+    "description": "🙂format naming convention",
+    "main": "./formatProperties.js",
+    "scripts": {
+      "build": "webpack",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MingHuang4040E095/formatProperties.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/MingHuang4040E095/formatProperties/issues"
+    },
+    "homepage": "https://github.com/MingHuang4040E095/formatProperties#readme",
+    "keywords": [
+        "naming convention",
+        "lowerCamel",
+        "UpperCamel",
+        "snake_case",
+        "lowerCamelToSnakeCase",
+        "lowerCamelToUpperCamel",
+        "upperCamelToLowerCamel",
+        "upperCamelToSnakeCase",
+        "snakeCaseToLowerCamel",
+        "snakeCaseToUpperCamel",
+        "format",
+        "js",
+        "javascript",
+        "front-end",
+        "web"
+    ]
+  }
+  

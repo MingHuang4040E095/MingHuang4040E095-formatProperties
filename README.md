@@ -4,14 +4,14 @@
 
 ## 😎使用方法 (usage)
 ```
-    npm install --save @syuminghuang/formatProperties
+    npm install --save @syuminghuang/format-properties
 ```
 
 ```javascript
     // step1 import js
-    import { FormatProperties } from '@syuminghuang/formatProperties.js'
+    import FormatProperties from '@syuminghuang/format-properties'
     // or
-    const { FormatProperties } = require("@syuminghuang/formatProperties")
+    const FormatProperties  = require("@syuminghuang/format-properties")
 
     // step2 set data & naming convention (設定資料和要轉換命名規則類型)
     // propertyName is snakeCase

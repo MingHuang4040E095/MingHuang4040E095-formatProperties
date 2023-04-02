@@ -10,11 +10,32 @@
         const obj = {
             user_name: 'YYY',
             id_Number: '123',
-            idNumber: '123',
+            userInfo: {
+                userName: 'MH',
+                userIdNumber: 'WWWW',
+                account: 'YYYYY',
+                // UserGender: 1,
+                pageInfo: {
+                    pageSize: 10,
+                    pageTotal: 0,
+                    currentPage: 1
+                }
+            },
+            // userList: ['a','b','c','b'],
+            userList: [
+                {
+                    id:1,
+                    userName:'YY',
+                    userGender: 1,
+                    userBirthday: '2020/02/20',
+                    detail: {
+                        friendsList: ['friend1', 'friend2', 'friend3']
+                    }
+                }
+            ]
             // UserTel: 'YYY',
             // UserGender: 'YYY',
         }
-        // formatProperties(obj)
         // 'lowerCamel', // 小駝峰
         // 'UpperCamel', // 大駝峰
         // 'snake_case', // 蛇型

@@ -1,4 +1,4 @@
-export class FormatProperties {
+class FormatProperties {
     constructor(data, type = 'lowerCamel') {
         // 英文字母-大寫
         this._englishAlphabetUpperCase = [
@@ -278,3 +278,4 @@ export class FormatProperties {
         return typeOriginal
     }
 }
+module.exports = FormatProperties

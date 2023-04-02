@@ -53,10 +53,8 @@ export class FormatProperties {
         if (depth === 0 && dataType !== 'object') throw new Error('data only object!')
 
         const isArray = Array.isArray(data) // 是不是陣列
-        // let realType = '' // 真正的類型
         switch (dataType) {
             case 'object':
-                // realType = isArray ? 'array' : 'object'
                 if (isArray) {
                     // 陣列
                     const nextDepth = depth + 1
@@ -89,7 +87,6 @@ export class FormatProperties {
                 }
                 break
             default:
-                // realType = valueType
                 const formatInfo = this.format(property, data)
                 return formatInfo
         }

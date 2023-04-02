@@ -31,16 +31,19 @@
                     detail: {
                         friendsList: ['friend1', 'friend2', 'friend3']
                     }
-                }
-            ]
+                },
+            ],
+            arrayList: [[{templeName:'temple', templeId: '123'}],[{templeName:'temple2', templeId: '456'}]]
             // UserTel: 'YYY',
             // UserGender: 'YYY',
         }
         // 'lowerCamel', // 小駝峰
         // 'UpperCamel', // 大駝峰
         // 'snake_case', // 蛇型
-        const newObj = new FormatProperties(obj, 'UpperCamel')
+        console.time()
+        const newObj = new FormatProperties(obj, 'snake_case')
         console.log(newObj)
+        console.timeEnd()
     </script>
 </head>
 <body>

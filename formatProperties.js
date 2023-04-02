@@ -1,5 +1,3 @@
-console.log(11)
-
 export class FormatProperties {
     constructor(data, type = 'lowerCamel') {
         // 英文字母-大寫
@@ -109,7 +107,9 @@ export class FormatProperties {
 
         switch (typeOriginal) {
             case this.type:
-                newPropertyName = property
+                if (this.type === 'snake_case')
+                    newPropertyName = this.checkReorganizeSnakeCase(property) // 檢查並重新整理蛇型
+                else newPropertyName = property
                 break
             case 'snake_case':
                 if (this.type === 'lowerCamel') newPropertyName = this.snakeCaseToLowerCamel(property) // 蛇型轉小駝峰
@@ -135,6 +135,18 @@ export class FormatProperties {
     }
 
     // -------------------------  轉換成蛇型  -----------------------------
+    // 檢查並重新整理蛇型
+    checkReorganizeSnakeCase(property = '') {
+        const strArray = property.split('_') // 切割字串
+        let newPropertyName = ''
+        strArray.forEach((item) => {
+            newPropertyName = newPropertyName
+                ? newPropertyName + '_' + item.toLocaleLowerCase()
+                : item.toLocaleLowerCase()
+        })
+        return newPropertyName
+    }
+
     // 大or小駝峰轉蛇型
     upperLowerCamelToSnakeCase(property = '') {
         const strArray = property.split('') // 切割字串
@@ -216,6 +228,7 @@ export class FormatProperties {
 
         return newPropertyName.join('')
     }
+    // ---------------------------- 其他共用function ------------------------
     // 單字的第一個字母大寫其他小寫 ex:user 轉 User
     handleUpperWord(word = '') {
         const itemStrArray = word.split('')

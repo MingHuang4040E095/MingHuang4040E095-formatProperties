@@ -16,21 +16,33 @@
     // step2 set data & naming convention (設定資料和要轉換命名規則類型)
     // propertyName is snakeCase
     const data = {
+        // snake_case(蛇型)
         user_id: 1,
         user_name: 'MH',
         user_birthday: '2023/04/02',
         user_tel: ['0900-000-000', '0911-111-111'],
+
+        // UpperCamel(大駝峰)
+        ProductName: 'name',
+        ProductPrice: 2000,
+        ProductQuantity: 99,
     }
-    // new FormatProperties(data, type)
-    // data only object (data只能傳物件)
-    // typeValue: lowerCamel(小駝峰)、UpperCamel(大駝峰)、snake_case(蛇型)
-    const newData = new FormatProperties(data, 'lowerCamel') // snakeCase to lowerCamel 蛇型轉小駝峰
+    /**
+     * FormatProperties(data, type)
+     * @param {[Object]} data 要轉換的資料
+     * @param {[String]} type 類型 lowerCamel(小駝峰)、UpperCamel(大駝峰)、snake_case(蛇型)
+     * @return {[Object]}
+     */
+    const newData = new FormatProperties(data, 'lowerCamel') // snakeCase & UpperCamel to lowerCamel 蛇型轉小駝峰
     // ---------- ↡  result 轉換結果 ↡ ----------------
-    // newData = {
-    //     userId: 1,
-    //     userName: 'MH',
-    //     userBirthday: '2023/04/02',
-    //     userTel: ['0900-000-000', '0911-111-111'],
-    // }
+    newData = {
+        userId: 1,
+        userName: 'MH',
+        userBirthday: '2023/04/02',
+        userTel: ['0900-000-000', '0911-111-111'],
+        productName: 'name',
+        productPrice: 2000,
+        productQuantity: 99,
+    }
 
 ```

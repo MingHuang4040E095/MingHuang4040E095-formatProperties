@@ -35,14 +35,14 @@
      */
     const newData = new FormatProperties(data, 'lowerCamel') // snakeCase & UpperCamel to lowerCamel 蛇型轉小駝峰
     // ---------- ↡  result 轉換結果 ↡ ----------------
-    newData = {
-        userId: 1,
-        userName: 'MH',
-        userBirthday: '2023/04/02',
-        userTel: ['0900-000-000', '0911-111-111'],
-        productName: 'name',
-        productPrice: 2000,
-        productQuantity: 99,
-    }
+    // newData = {
+    //     userId: 1,
+    //     userName: 'MH',
+    //     userBirthday: '2023/04/02',
+    //     userTel: ['0900-000-000', '0911-111-111'],
+    //     productName: 'name',
+    //     productPrice: 2000,
+    //     productQuantity: 99,
+    // }
 
 ```

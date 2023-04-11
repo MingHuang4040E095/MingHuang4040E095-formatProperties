@@ -1,5 +1,4 @@
 # formatProperties
-<!-- ![npm](https://img.shields.io/npm/dt/@syuminghuang/format-properties)    -->
 🙂format naming convention
 轉換命名規則
 

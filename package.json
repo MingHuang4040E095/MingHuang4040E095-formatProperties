@@ -1,6 +1,6 @@
 {
     "name": "@syuminghuang/format-properties",
-    "version": "1.6.0",
+    "version": "1.8.2",
     "description": "🙂format naming convention",
     "main": "./formatProperties.js",
     "scripts": {
@@ -11,7 +11,7 @@
       "type": "git",
       "url": "git+https://github.com/MingHuang4040E095/formatProperties.git"
     },
-    "author": "",
+    "author": "syuminghuang",
     "license": "ISC",
     "bugs": {
       "url": "https://github.com/MingHuang4040E095/formatProperties/issues"

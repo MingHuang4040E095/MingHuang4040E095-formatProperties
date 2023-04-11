@@ -1,6 +1,6 @@
 {
     "name": "@syuminghuang/format-properties",
-    "version": "1.4.0",
+    "version": "1.6.0",
     "description": "🙂format naming convention",
     "main": "./formatProperties.js",
     "scripts": {

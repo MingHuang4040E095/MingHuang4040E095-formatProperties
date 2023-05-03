@@ -53,6 +53,7 @@ class FormatProperties {
         if (depth === 0 && dataType !== 'object') throw new Error('data only object!')
 
         const isArray = Array.isArray(data) // 是不是陣列
+        const isNull = data === null // 是不是null
         switch (dataType) {
             case 'object':
                 if (isArray) {
@@ -70,6 +71,9 @@ class FormatProperties {
                         newPropertyName: formatInfo.newPropertyName,
                         value: newArray,
                     }
+                } else if (isNull) {
+                    const formatInfo = this.format(property, data)
+                    return formatInfo
                 } else {
                     // 物件
                     const obj = {}
